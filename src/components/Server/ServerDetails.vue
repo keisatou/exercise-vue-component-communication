@@ -1,7 +1,7 @@
 <template>
   <div class="col-xs-12 col-sm-6">
-    <p v-show="!server">Server Details are currently not updated</p>
-    <p v-show="server">Server Status: {{ server.status }}</p>
+    <p v-if="!server">Server Details are currently not updated</p>
+    <p v-else="server">Server Status: {{ server.status }}</p>
   </div>
 
 </template>
